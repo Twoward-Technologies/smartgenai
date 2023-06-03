@@ -6,37 +6,7 @@
     .image-container {
       position: relative;
     }
-/* Custom styles for the pop-up */
-    .popup {
-      background-color: #0c0c0c;
-      color: #fff;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 14px;
-      padding: 20px;
-      text-align: center;
-      max-width: 300px;
-      margin: 0 auto;
-    }
 
-    .popup h2 {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    .popup p {
-      margin-bottom: 10px;
-    }
-
-    .popup button {
-      background-color: #0f33ff;
-      border: none;
-      color: #fff;
-      padding: 10px 20px;
-      text-transform: uppercase;
-      font-weight: bold;
-      cursor: pointer;
-    }
     .image-container img {
       position: absolute;
       top: 0;
@@ -66,7 +36,7 @@
   </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="SmartGenAI">
+  <meta name="keywords" content="SmartGen">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="icon" href="assets/img/Logo1.png" type="image">
 </head>
@@ -86,7 +56,7 @@
     <div id="viewport" class="l-viewport">
       <div class="l-wrapper">
         <header class="header">
-          <a class="header--logo" href="sitemap.xml">
+          <a class="header--logo" href="#0">
             <img src="assets/img/Logo1.png" alt="" width="6%" height="6%">
             <p>SmartGen AI</p>
           </a>
@@ -109,7 +79,7 @@
             <div class="intro">
               <div class="intro--banner">
                 <h1>Bringing<br>intellegence<br>to life</h1>
-                <button class="" href="Dumb ai.html"><a href="Dumb ai.html" onclick="Victory"><font color="white">Try AI (Coming Soon)</font></a>
+                <button class="" href="Dumb ai.html"><a href="Dumb ai.html" onclick="Victory"><font color="white">Try AI</font></a>
                   </svg>
                   <span class="btn-background"></span>
                 </button>
@@ -203,7 +173,7 @@
                 <a href="sankalp.html">
                   <h3>Sankalp Jain</h3>
                 </a>
-                <a href="subham.html">
+                <a href="shubham.html">
                   <h3>Subham Deep</h3>
                 </a>
                 <a href="aayush.html">
@@ -226,7 +196,7 @@
                   </div>
                   <ul class="modal--options">
                     <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="sankalp.html">Founder</a></li>
+                    <li><a href="snkalp.html">Founder</a></li>
                     <li><a href="mailto:smartgenai@gmail.com">Contact Us</a></li>
                   </ul>
                 </div>
@@ -235,10 +205,14 @@
           </li>
           <li class="l-section section">
             <div class="hire">
-                  <h1 class="coming-soon"><center>COMING SOON</center></h1>
+                  <h1 class="coming-soon">COMING SOON</h1>
                   <center><div class="countdown"></div></center>
               <h2>Pre-Register</h2>
-              <form class="work-request">
+              <form class="work-request" id="contactForm">
+                <div class="alert">
+                  <h2>Thank you for pre-registering!</h2>
+                  <p>We will notify you once SmartGen AI is available.</p>
+                </div>
                 <div class="work-request--options">
                   <span class="options-a">
                     <input id="opt-1" type="checkbox" value="app design">
@@ -254,13 +228,8 @@
                     <label for="email">Email</label>
                   </div>
                 </div>
-                <input type="submit" value="Send Request">
+                <button type="submit" value="Send Request">Send Request</button>
               </form>
-              <div class="popup" id="popup">
-    <h2>Thank you for pre-registering!</h2>
-    <p>We will notify you once SmartGen AI is available.</p>
-    <button onclick="closePopup()">Close</button>
-  </div>
             </div>
           </li>
         </ul>
@@ -275,21 +244,9 @@
     <li>Pre-Register</li>
   </ul>
 </div>
-    <script>
-    // Function to close the pop-up
-    function closePopup() {
-      document.getElementById("popup").style.display = "none";
-    }
-
-    // Event listener for form submission
-    document.getElementById("pre-registration-form").addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevent form submission
-
-      // Show the pop-up
-      document.getElementById("popup").style.display = "block";
-    });
-  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="contact.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
   <script>
