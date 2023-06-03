@@ -208,7 +208,11 @@
                   <h1 class="coming-soon">COMING SOON</h1>
                   <center><div class="countdown"></div></center>
               <h2>Pre-Register</h2>
-              <form class="work-request">
+              <form class="work-request" id="contactForm">
+                <div class="alert">
+                  <h2>Thank you for pre-registering!</h2>
+                  <p>We will notify you once SmartGen AI is available.</p>
+                </div>
                 <div class="work-request--options">
                   <span class="options-a">
                     <input id="opt-1" type="checkbox" value="app design">
@@ -224,7 +228,7 @@
                     <label for="email">Email</label>
                   </div>
                 </div>
-                <input type="submit" value="Send Request">
+                <button type="submit" value="Send Request">Send Request</button>
               </form>
             </div>
           </li>
@@ -240,7 +244,9 @@
     <li>Pre-Register</li>
   </ul>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="contact.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
   <script>
