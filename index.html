@@ -256,6 +256,11 @@
                 </div>
                 <input type="submit" value="Send Request">
               </form>
+              <div class="popup" id="popup">
+    <h2>Thank you for pre-registering!</h2>
+    <p>We will notify you once SmartGen AI is available.</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
             </div>
           </li>
         </ul>
@@ -270,6 +275,20 @@
     <li>Pre-Register</li>
   </ul>
 </div>
+    <script>
+    // Function to close the pop-up
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+
+    // Event listener for form submission
+    document.getElementById("pre-registration-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Show the pop-up
+      document.getElementById("popup").style.display = "block";
+    });
+  </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
