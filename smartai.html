@@ -5,6 +5,7 @@
   <title>About SmartGen AI</title>
   <link rel="icon" type="image" href="assets/img/Logo1.png">
   <style>
+    /* Default styles */
     #video-background {
       position: fixed;
       top: 0;
@@ -14,6 +15,7 @@
       z-index: -1;
       object-fit: cover;
     }
+
     body {
       font-family: Arial, sans-serif;
       background-image: url("assets/img/wall291.png");
@@ -22,7 +24,7 @@
       color: #ffffff;
       padding: -40px;
     }
-    
+
     .container {
       max-width: 900px;
       margin: 0 auto;
@@ -32,17 +34,17 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       text-align: center;
     }
-    
+
     h1 {
       font-size: 36px;
       margin-bottom: 20px;
     }
-    
+
     .property-list {
       list-style-type: disc;
       margin-left: 20px;
     }
-    
+
     .back-button {
       display: inline-block;
       padding: 10px 20px;
@@ -51,6 +53,37 @@
       text-decoration: none;
       border-radius: 5px;
       margin-top: 20px;
+    }
+
+    /* Responsive styles */
+    @media only screen and (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .property-list {
+        margin-left: 0;
+        text-align: left;
+        padding-left: 0;
+      }
+
+      .property-list li {
+        margin-bottom: 10px;
+      }
+
+      .back-button {
+        display: block;
+        margin-top: 10px;
+      }
     }
   </style>
 </head>
