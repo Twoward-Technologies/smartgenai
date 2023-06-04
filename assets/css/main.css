@@ -1253,10 +1253,11 @@ body {
   text-decoration: none;
   top: -40px;
   color: #fff;
-  border: 5px solid #0f33ff;
+  border: 0px solid #0f33ff;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+  border-radius: 50%;
 }
 
 .about--options>a:nth-child(1) {
