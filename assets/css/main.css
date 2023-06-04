@@ -1249,7 +1249,7 @@ body {
 .about--options>a {
   position: relative;
   width: 175px;
-  height: 100px;
+  height: 125px;
   text-decoration: none;
   top: -40px;
   color: #fff;
@@ -1257,7 +1257,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 35%;
+  border-radius: 50%;
 }
 
 .about--options>a:nth-child(1) {
