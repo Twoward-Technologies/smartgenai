@@ -1,5 +1,4 @@
 SmartGen AI
-SmartGen AI
 
 Welcome to SmartGen AI! This is a powerful artificial intelligence system that is designed to generate creative and intelligent outputs across various domains. Whether you need assistance with writing, brainstorming ideas, or seeking inspiration, SmartGen AI is here to help.
 
