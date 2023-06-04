@@ -1257,7 +1257,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 50%;
+  border-radius: 45%;
 }
 
 .about--options>a:nth-child(1) {
