@@ -1,229 +1,310 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Dumb AI</title>
-  <link rel="icon" type="image" href="assets/img/Logo1.png">
-  <style>
-    #video-background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      object-fit: cover;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      background-image: url("assets/img/wall291.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      color: #ffffff;
-      padding: 0px;
-    }
-    
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: linear-gradient(rgba(38, 38, 38, 0.7), rgba(12, 12, 12, 0.7));
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      text-align: center;
-    }
-    
-    h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-    
-    .coming-soon {
-      font-family: "Arial Black", sans-serif;
-      font-size: 80px;
-      font-weight: bold;
-      color: #ffffff;
-      animation: pulse-animation 1.5s infinite;
-    }
-    
-    .countdown {
-      font-size: 24px;
-      margin-top: 30px;
-      animation: countdown-animation 1s steps(18) infinite;
-    }
-    @keyframes pulse-animation {
-      0% {
-        transform: scale(1);
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dumb AI</title>
+    <link rel="icon" type="image" href="assets/img/Logo1.png" />
+    <style>
+      #video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
       }
-      50% {
-        transform: scale(1.1);
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("assets/img/wall291.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #ffffff;
+        padding: 0px;
       }
-      100% {
-        transform: scale(1);
-      }
-    }
-    
-    @keyframes countdown-animation {
-      0% {
-        content: "Launching in: 24 months";
-      }
-      4% {
-        content: "Launching in: 23 months";
-      }
-      8% {
-        content: "Launching in: 22 months";
-      }
-      12% {
-        content: "Launching in: 21 months";
-      }
-      16% {
-        content: "Launching in: 20 months";
-      }
-      20% {
-        content: "Launching in: 19 months";
-      }
-      24% {
-        content: "Launching in: 18 months";
-      }
-      28% {
-        content: "Launching in: 17 months";
-      }
-      32% {
-        content: "Launching in: 16 months";
-      }
-      36% {
-        content: "Launching in: 15 months";
-      }
-      40% {
-        content: "Launching in: 14 months";
-      }
-      44% {
-        content: "Launching in: 13 months";
-      }
-      48% {
-        content: "Launching in: 12 months";
-      }
-      52% {
-        content: "Launching in: 11 months";
-      }
-      56% {
-        content: "Launching in: 10 months";
-      }
-      60% {
-        content: "Launching in: 9 months";
-      }
-      64% {
-        content: "Launching in: 8 months";
-      }
-      68% {
-        content: "Launching in: 7 month";
-      }
-      72% {
-        content: "Launching in: 6 months";
-      }
-      76% {
-        content: "Launching in: 5 months";
-      }
-      80% {
-        content: "Launching in: 4 months";
-      }
-      84% {
-        content: "Launching in: 3 months";
-      }
-      88% {
-        content: "Launching in: 2 months";
-      }
-      92% {
-        content: "Launching in: 1 months";
-      }
-      96% {
-        content: "Launching in: 30 days";
-      }
-      100% {
-        content: "Lauching Soon!";
-      }
-    }
-    
-    .property-list {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-    
-    .back-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #ffffff;
-      color: #000000;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>About Dumb AI</h1>
-    <p align="justify">SmartGen AI is an innovative artificial intelligence company dedicated to developing cutting-edge AI solutions for various industries. Our flagship product is an advanced AI language model that combines the best features of every AI model present in the market and provide you with complete pakage.</p>
-    <p align="justify">With our AI model, we aim to revolutionize the way people interact with technology and provide intelligent and human-like responses to a wide range of queries and tasks.</p>
-    
-    <h2 class="coming-soon">COMING SOON</h2>
-    
-    <div class="countdown"></div>
-    <h2>Key Features</h2>
-    <ul class="property-list">
-      <li><p align="justify">Powerful natural language processing: SmartGen AI utilizes advanced natural language processing techniques to understand and process human language effectively.</p></li>
-<li><p align="justify">Multi-purpose AI model: The AI model developed by SmartGen AI is designed to handle various tasks and provide versatile functionalities.
-</p></li><li><p align="justify"> Deep learning algorithms: The AI model is built on deep learning algorithms, enabling it to learn and improve its performance over time.</p></li>
-<li><p align="justify"> Context-aware responses: SmartGen AI's model takes into account the context of the conversation to provide more accurate and relevant responses.</p></li><li><p align="justify">
-Support for multiple languages: The AI model is capable of understanding and generating responses in multiple languages, making it suitable for a global audience.</p></li>
-    </ul>
-    
-    <h2>Benefits</h2>
-    <ul class="property-list">
-      <li><p align="justify">Enhanced user experience: With SmartGen AI, users can enjoy a more seamless and intuitive interaction with technology, thanks to the AI model's advanced capabilities.</p></li>
-<li><p align="justify">Improved customer support: The AI model can assist in customer support scenarios by providing timely and helpful responses, enhancing the overall customer experience.</p></li>
-<li><p align="justify">Efficient information retrieval: SmartGen AI's model can quickly and accurately retrieve information from vast datasets, saving time and effort for users.</p></li>
-<li><p align="justify">Time and cost savings: By automating certain tasks and providing efficient solutions, SmartGen AI's AI model can help businesses save time and resources.</p></li>
-<li><p align="justify">Increased productivity: With the assistance of SmartGen AI's model, users can accomplish tasks more efficiently, leading to improved productivity.</p></li>
-    </ul>
-    
-    <a href="index.html" class="back-button">Back</a>
-    <video id="video-background" autoplay loop muted>
-    <source src="assets/img/wall0.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  </div>
-  
-  <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Jun 6, 2025 12:00:00").getTime();
 
-    // Update the count down every 1 second
-    var x = setInterval(function() {
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: linear-gradient(
+          rgba(38, 38, 38, 0.7),
+          rgba(12, 12, 12, 0.7)
+        );
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+      }
 
-    // Get today's date and time
-    var now = new Date().getTime();
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
 
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
+      .coming-soon {
+        font-family: "Arial Black", sans-serif;
+        font-size: 80px;
+        font-weight: bold;
+        color: #ffffff;
+        animation: pulse-animation 1.5s infinite;
+      }
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      .countdown {
+        font-size: 24px;
+        margin-top: 30px;
+        animation: countdown-animation 1s steps(18) infinite;
+      }
+      @keyframes pulse-animation {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
 
-    // Display the result in the element with id="countdown"
-    document.getElementById("countdown").innerHTML = "Launching in: " + days + " Days " + hours + " Hours "
-    + minutes + " Minutes " + seconds + " seconds ";
+      @keyframes countdown-animation {
+        0% {
+          content: "Launching in: 24 months";
+        }
+        4% {
+          content: "Launching in: 23 months";
+        }
+        8% {
+          content: "Launching in: 22 months";
+        }
+        12% {
+          content: "Launching in: 21 months";
+        }
+        16% {
+          content: "Launching in: 20 months";
+        }
+        20% {
+          content: "Launching in: 19 months";
+        }
+        24% {
+          content: "Launching in: 18 months";
+        }
+        28% {
+          content: "Launching in: 17 months";
+        }
+        32% {
+          content: "Launching in: 16 months";
+        }
+        36% {
+          content: "Launching in: 15 months";
+        }
+        40% {
+          content: "Launching in: 14 months";
+        }
+        44% {
+          content: "Launching in: 13 months";
+        }
+        48% {
+          content: "Launching in: 12 months";
+        }
+        52% {
+          content: "Launching in: 11 months";
+        }
+        56% {
+          content: "Launching in: 10 months";
+        }
+        60% {
+          content: "Launching in: 9 months";
+        }
+        64% {
+          content: "Launching in: 8 months";
+        }
+        68% {
+          content: "Launching in: 7 month";
+        }
+        72% {
+          content: "Launching in: 6 months";
+        }
+        76% {
+          content: "Launching in: 5 months";
+        }
+        80% {
+          content: "Launching in: 4 months";
+        }
+        84% {
+          content: "Launching in: 3 months";
+        }
+        88% {
+          content: "Launching in: 2 months";
+        }
+        92% {
+          content: "Launching in: 1 months";
+        }
+        96% {
+          content: "Launching in: 30 days";
+        }
+        100% {
+          content: "Lauching Soon!";
+        }
+      }
 
-    // If the count down is finished, write some text
-   if (distance < 0) {
-      clearInterval(x);
-     document.getElementById("countdown").innerHTML = "EXPIRED";
-   }
-    }, 1000);
+      .property-list {
+        list-style-type: disc;
+        margin-left: 20px;
+      }
 
-  </script>
-</body>
+      .back-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        color: #000000;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>About Dumb AI</h1>
+      <p align="justify">
+        SmartGen AI is an innovative artificial intelligence company dedicated
+        to developing cutting-edge AI solutions for various industries. Our
+        flagship product is an advanced AI language model that combines the best
+        features of every AI model present in the market and provide you with
+        complete package.
+      </p>
+      <p align="justify">
+        With our AI model, we aim to revolutionize the way people interact with
+        technology and provide intelligent and human-like responses to a wide
+        range of queries and tasks.
+      </p>
+
+      <h2 class="coming-soon">COMING SOON</h2>
+
+      <div id="countdown"></div>
+      <h2>Key Features</h2>
+      <ul class="property-list">
+        <li>
+          <p align="justify">
+            Powerful natural language processing: SmartGen AI utilizes advanced
+            natural language processing techniques to understand and process
+            human language effectively.
+          </p>
+        </li>
+        <li>
+          <p align="justify">
+            Multi-purpose AI model: The AI model developed by SmartGen AI is
+            designed to handle various tasks and provide versatile
+            functionalities.
+          </p>
+        </li>
+        <li>
+          <p align="justify">
+            Deep learning algorithms: The AI model is built on deep learning
+            algorithms, enabling it to learn and improve its performance over
+            time.
+          </p>
+        </li>
+        <li>
+          <p align="justify">
+            Context-aware responses: SmartGen AI's model takes into account the
+            context of the conversation to provide more accurate and relevant
+            responses.
+          </p>
+        </li>
+        <li>
+          <p align="justify">
+            Support for multiple languages: The AI model is capable of
+            understanding and generating responses in multiple languages, making
+            it suitable for a global audience.
+          </p>
+        </li>
+      </ul>
+
+      <h2>Benefits</h2>
+      <ul class="property-list">
+        <li>
+          <p align="justify">
+            Enhanced user experience: With SmartGen AI, users can enjoy a more
+            seamless and intuitive interaction with technology, thanks to the AI
+            model's advanced capabilities.
+          </p>
+        </li>
+        <li>
+          <p align="justify">
+            Improved customer support: The AI model can assist in customer
+            support scenarios by providing timely and helpful responses,
+            enhancing the overall customer experience.
+          </p>
+        </li>
+        <li>
+          <p align="justify">
+            Efficient information retrieval: SmartGen AI's model can quickly and
+            accurately retrieve information from vast datasets, saving time and
+            effort for users.
+          </p>
+        </li>
+        <li>
+          <p align="justify">
+            Time and cost savings: By automating certain tasks and providing
+            efficient solutions, SmartGen AI's AI model can help businesses save
+            time and resources.
+          </p>
+        </li>
+        <li>
+          <p align="justify">
+            Increased productivity: With the assistance of SmartGen AI's model,
+            users can accomplish tasks more efficiently, leading to improved
+            productivity.
+          </p>
+        </li>
+      </ul>
+
+      <a href="index.html" class="back-button">Back</a>
+      <video id="video-background" autoplay loop muted>
+        <source src="assets/img/wall0.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Jun 6, 2025 12:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="countdown"
+        document.getElementById("countdown").innerHTML =
+          "Launching in: " +
+          days +
+          " Days " +
+          hours +
+          " Hours " +
+          minutes +
+          " Minutes " +
+          seconds +
+          " seconds ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+  </body>
 </html>
