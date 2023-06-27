@@ -5,6 +5,27 @@
   <title>Subham Deep</title>
   <link rel="icon" href="assets/img/Logo1.png" type="image">
   <style>
+    .typing-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  color: gold;
+  letter-spacing: .15em;
+}
+
+.typing-animation:after {
+  content: "|"; /* Cursor symbol */
+  display: inline-block;
+  animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
      body {
       font-family: Arial, sans-serif;
       background-color: #0c0c0c;
@@ -176,17 +197,62 @@
     </div>
   </div>
   <script>
-    // Animate social icons
+  // Animate social icons
     const socialIcons = document.querySelectorAll('.social-icon');
     socialIcons.forEach((icon, index) => {
       icon.style.animationDelay = `${index * 0.2}s`;
     });
 
-    // Dynamic heading
-    const dynamicHeading = document.createElement('h1');
-    dynamicHeading.textContent = "Subham Deep - Developer and Backend";
-    dynamicHeading.style.animation = "fade-in 1s ease";
-    document.querySelector('.content').insertBefore(dynamicHeading, document.querySelector('h2'));
-  </script>
+  const texts = [
+  "Hello My Name is Subham.",
+  "I am the Developer and Co-Founder of SmartGen AI",
+  "Some of the information are mentioned below",
+  "We are currently working on our AI model!"
+];
+
+let state = "typing";
+let textIndex = 0;
+let currentIndex = 0;
+
+function startTypingAnimation() {
+  const element = document.querySelector('.typing-animation');
+
+  switch (state) {
+    case "typing":
+      element.innerText = texts[textIndex].substring(0, currentIndex);
+      currentIndex++;
+
+      if (currentIndex <= texts[textIndex].length) {
+        setTimeout(startTypingAnimation, 100);
+      } else {
+        state = "deleting";
+        setTimeout(startTypingAnimation, 1000);
+      }
+      break;
+
+    case "deleting":
+      element.innerText = texts[textIndex].substring(0, currentIndex);
+      currentIndex--;
+
+      if (currentIndex >= 0) {
+        setTimeout(startTypingAnimation, 50);
+      } else {
+        state = "retyping";
+        setTimeout(startTypingAnimation, 500);
+      }
+      break;
+
+    case "retyping":
+      currentIndex = 0;
+      state = "typing";
+      textIndex = (textIndex + 1) % texts.length;
+      setTimeout(startTypingAnimation, 500);
+      break;
+  }
+}
+
+startTypingAnimation();
+
+</script>
 </body>
 </html>
