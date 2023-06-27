@@ -5,6 +5,27 @@
   <title>Aayush Kujur</title>
   <link rel="icon" href="assets/img/Logo1.png" type="image">
   <style>
+    .typing-animation {
+  overflow: hidden; /* Ensures that the text doesn't overflow */
+  border-right: .15em solid orange; /* Creates the typing cursor effect */
+  white-space: nowrap; /* Keeps the text in a single line */
+  margin: 0 auto; /* Centers the element horizontally */
+  letter-spacing: .15em; /* Adjusts the spacing between characters */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite; /* Configures the typing and blinking animation */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}
+
      body {
       font-family: Arial, sans-serif;
       background-color: #0c0c0c;
@@ -153,7 +174,7 @@
     <div class="content">
       <h1>About the Co-Founder</h1>
       <center><img class="img-logo" src="assets/img/aayushKujur.png" alt="Founder" width="60%" height="60%"></center>
-      <h2>Meet Our Visionary Co-Founder</h2>
+      <h3 class="typing-animation">My Name is Aayush Kujur Co-founder of Smartgen AI!</h3>
       <p>Aayush, a highly driven and ambitious individual, is one of the brilliant co-founders behind SmartGenAI, a groundbreaking technology company that is reshaping the industry landscape. With a deep passion for web development and a relentless desire to excel, Aayush has been instrumental in driving the company's growth and success. His unwavering commitment to overcoming challenges and constant self-improvement has played a pivotal role in positioning SmartGenAI as a leader in the market. </p>
       <p>Aayush's expertise in computer science, coupled with his solid background in B.Tech, has provided him with a strong foundation to innovate and develop cutting-edge solutions. Drawing inspiration from his early learning experiences on platforms like Udemy, Aayush has continuously honed his skills as a web developer, bringing unparalleled expertise to the table. Additionally, he actively contributes to open-source projects, sharing his knowledge and expertise with the developer community.</p>
       <p>Apart from his professional pursuits, Aayush is known for his dedication, loyalty, and passion for personal growth. His enthusiasm for staying fit, love for music, and keen interest in investing further reflect his multifaceted personality.</p>
@@ -182,11 +203,15 @@
       icon.style.animationDelay = `${index * 0.2}s`;
     });
 
-    // Dynamic heading
-    const dynamicHeading = document.createElement('h1');
-    dynamicHeading.textContent = "Aayush Kujur - Developer and FrontEnd";
-    dynamicHeading.style.animation = "fade-in 1s ease";
-    document.querySelector('.content').insertBefore(dynamicHeading, document.querySelector('h2'));
+   // Optional JavaScript code if you want to control the animation programmatically
+
+// Example: Delay the animation start
+setTimeout(startTypingAnimation, 2000);
+
+function startTypingAnimation() {
+  const element = document.querySelector('.typing-animation');
+  element.style.animationPlayState = 'running';
+}
   </script>
 </body>
 </html>
