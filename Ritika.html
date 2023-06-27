@@ -5,7 +5,7 @@
   <title>Ritika Raj</title>
   <link rel="icon" href="assets/img/Logo1.png" type="image">
   <style>
-    body {
+     body {
       font-family: Arial, sans-serif;
       background-color: #0c0c0c;
       color: #ffffff;
@@ -21,6 +21,18 @@
       padding: 40px;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      animation: slide-in 1s ease;
+    }
+    
+    @keyframes slide-in {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     
     .content {
@@ -30,23 +42,56 @@
     h1 {
       font-size: 36px;
       margin-bottom: 20px;
+      animation: fade-in 1s ease;
+    }
+    
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
     
     h2 {
       font-size: 24px;
       margin-bottom: 15px;
+      animation: slide-up 1s ease;
+    }
+    
+    @keyframes slide-up {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     
     p {
       margin-bottom: 15px;
       line-height: 1.5;
+      animation: fade-in 1s ease;
     }
     
     .img-logo {
       max-width: 100%;
       margin-bottom: 20px;
       border-radius: 50%;
-      box-shadow: 2 8px 14px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3);
+      animation: pop-in 1s ease;
+    }
+    
+    @keyframes pop-in {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
     }
     
     a {
@@ -78,6 +123,7 @@
       background-color: #1a1a1a;
       padding: 20px;
       border-radius: 8px;
+      animation: slide-in 1s ease;
     }
     
     .social-icons {
@@ -88,6 +134,17 @@
       display: inline-block;
       margin-right: 10px;
       font-size: 20px;
+      opacity: 0;
+      animation: fade-in 1s ease forwards;
+    }
+    
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
@@ -120,5 +177,18 @@
       </div>
     </div>
   </div>
+  <script>
+    // Animate social icons
+    const socialIcons = document.querySelectorAll('.social-icon');
+    socialIcons.forEach((icon, index) => {
+      icon.style.animationDelay = `${index * 0.2}s`;
+    });
+
+    // Dynamic heading
+    const dynamicHeading = document.createElement('h1');
+    dynamicHeading.textContent = "Sankalp Jain - Innovator and Visionary";
+    dynamicHeading.style.animation = "fade-in 1s ease";
+    document.querySelector('.content').insertBefore(dynamicHeading, document.querySelector('h2'));
+  </script>
 </body>
 </html>
