@@ -1248,7 +1248,7 @@ body {
 
 .about--options>a {
   position: relative;
-  width: 175px;
+  width: 145px;
   height: 135px;
   text-decoration: none;
   top: -60px;
@@ -1261,7 +1261,7 @@ body {
 }
 
 .about--options>a:nth-child(1) {
-  background-image: url("../img/sankalp1.jpg")
+  background-image: url("../img/sankalp.jpg")
 }
 
 .about--options>a:nth-child(2) {
